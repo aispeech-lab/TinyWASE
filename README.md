@@ -22,7 +22,7 @@ python train_tinywase.py
 ```
 
 ### Evaluation
-Specify the path for --restore, --log　in eval_tinywase and run the bash.
+Specify the path for --restore, --log in eval_tinywase and run the bash.
 
 ```bash
 python eval_tinywase.py
