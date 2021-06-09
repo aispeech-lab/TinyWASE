@@ -33,7 +33,7 @@ If you find this repo helpful, please consider citing:
 
 ```
 @article{huang2021compress,
-  title={Compressing Speaker Extraction Model with Ultra-lowPrecision Quantization and Knowledge Distillation},
+  title={Compressing Speaker Extraction Model with Ultra-low Precision Quantization and Knowledge Distillation},
   author={Huang, Yating and Hao, Yunzhe and Xu, Jiaming and Xu, Bo}
 }
 ```
