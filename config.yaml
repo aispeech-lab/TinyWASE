@@ -1,0 +1,40 @@
+BLOCKS: 'tcn'  
+REAL_TIME: 0  # 0: global; 1: causal.
+LOW_LATENCY: 100  # >stack * layer: global; [0, stack * layer]: causal. For example: 5: 32 ms low-latency; 6: 64 ms low-latency
+PICKLE: 1
+VAD: 1
+NOISE: 0
+FREEZE_VOICEPRINT: 0 
+ONSET: 1
+OFFSET: 0 
+VOICEPRINT: 1
+SPEAKER: 3
+
+log:  './log/'
+epoch:  1 # 50 
+batch_size: 24 
+test_batch_size: 1
+optim:  'adam'
+loss: 'cross_entropy' 
+learning_rate:  0.0005
+max_grad_norm:  5
+
+SCHEDULE:  1
+
+voiceP_eval_interval:  30 #30
+eval_interval:  500 
+save_interval:  500 
+
+METRIC:  ['SDR',]
+
+FRAME_RATE:  8000
+FRAME_LENGTH: 256  # int(FRAME_RATE * 0.032)
+FRAME_SHIFT:  64  # int(FRAME_LENGTH / 4)
+MAX_LEN:  32000  # (FRAME_RATE * 4)
+
+# params for the model
+layer_teacher: 8
+layer: 8
+layer_student : 8
+stack: 3
+
